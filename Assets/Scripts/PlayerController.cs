@@ -2,46 +2,32 @@
 using System.Collections;
 
 public class PlayerController : MonoBehaviour {
-	
+
 	public float Speed;
+	public AttackController attackCtrl;
+	public AnimationController animationController;
 
-    private Animator animator;
-
-	void Start ()
-	{
-	    animator = GetComponent<Animator>();
-	}
+	void Awake(){
+		//animationController = GetComponent<AnimationController> ();
+		}
 	
 	void Update () {
 
-       
-
-	    if (Input.GetKey("down") || Input.GetKey(KeyCode.S))
-	    {
-	        WalkDown();
-	        animator.Play("WalkDown");
-	    }else
-
-		if (Input.GetKey ("up") || Input.GetKey (KeyCode.W))
-		{
-			WalkUp();
-            animator.Play("WalkUp");
-        }else
-
-		if (Input.GetKey ("left") || Input.GetKey (KeyCode.A))
-		{
-			WalkLeft();
-            animator.Play("WalkLeft");
-        }else if (Input.GetKey("right") || Input.GetKey(KeyCode.D))
-        {
-            WalkRight();
-            animator.Play("WalkRight");
-        }
-        else
-        {
-            animator.Play("idle");
-        }
-        
+		if (Input.GetKey ("down") || Input.GetKey (KeyCode.S)) {
+						WalkDown ();
+						animationController.playWalkDown ();
+		} else if (Input.GetKey ("up") || Input.GetKey (KeyCode.W)) {
+						WalkUp ();
+						animationController.playWalkUp ();
+		} else if (Input.GetKey ("left") || Input.GetKey (KeyCode.A)) {
+						WalkLeft ();
+						animationController.playWalkLeft ();
+		} else if (Input.GetKey ("right") || Input.GetKey (KeyCode.D)) {
+						WalkRight ();
+						animationController.playWalkRight ();
+		} else {
+						animationController.playIdle();
+		}
 
 		if (Input.GetMouseButtonDown (0))
 			Attack ();
@@ -55,25 +41,29 @@ public class PlayerController : MonoBehaviour {
 	void WalkRight ()
 	{
 		transform.position += Vector3.right * Speed;
+		attackCtrl.Direction(Vector3.right);
 	}
 
 	void WalkLeft ()
-	{
+	{	
 		transform.position += Vector3.left * Speed;
+		attackCtrl.Direction(Vector3.left);
 	}
 
 	void WalkUp ()
 	{
 		transform.position += Vector3.up * Speed;
+		attackCtrl.Direction(Vector3.up);
 	}
 
 	void WalkDown ()
 	{
 		transform.position += Vector3.down * Speed;
+		attackCtrl.Direction(Vector3.down);
 	}
 
 	void Attack ()
 	{
-
+		attackCtrl.Attack ();
 	}
 }
