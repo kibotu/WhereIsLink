@@ -1,0 +1,2027 @@
+fileFormatVersion: 2
+guid: 22f0faa0a6827494abf7cef64a31c9ee
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: crono_0
+    21300002: crono_1
+    21300004: crono_2
+    21300006: crono_3
+    21300008: crono_4
+    21300010: crono_5
+    21300012: crono_6
+    21300014: crono_7
+    21300016: crono_8
+    21300018: crono_9
+    21300020: crono_10
+    21300022: crono_11
+    21300024: crono_12
+    21300026: crono_13
+    21300028: crono_14
+    21300030: crono_15
+    21300032: crono_16
+    21300034: crono_17
+    21300036: crono_18
+    21300038: crono_19
+    21300040: crono_20
+    21300042: crono_21
+    21300044: crono_22
+    21300046: crono_23
+    21300048: crono_24
+    21300050: crono_25
+    21300052: crono_26
+    21300054: crono_27
+    21300056: crono_28
+    21300058: crono_29
+    21300060: crono_30
+    21300062: crono_31
+    21300064: crono_32
+    21300066: crono_33
+    21300068: crono_34
+    21300070: crono_35
+    21300072: crono_36
+    21300074: crono_37
+    21300076: crono_38
+    21300078: crono_39
+    21300080: crono_40
+    21300082: crono_41
+    21300084: crono_42
+    21300086: crono_43
+    21300088: crono_44
+    21300090: crono_45
+    21300092: crono_46
+    21300094: crono_47
+    21300096: crono_48
+    21300098: crono_49
+    21300100: crono_50
+    21300102: crono_51
+    21300104: crono_52
+    21300106: crono_53
+    21300108: crono_54
+    21300110: crono_55
+    21300112: crono_56
+    21300114: crono_57
+    21300116: crono_58
+    21300118: crono_59
+    21300120: crono_60
+    21300122: crono_61
+    21300124: crono_62
+    21300126: crono_63
+    21300128: crono_64
+    21300130: crono_65
+    21300132: crono_66
+    21300134: crono_67
+    21300136: crono_68
+    21300138: crono_69
+    21300140: crono_70
+    21300142: crono_71
+    21300144: crono_72
+    21300146: crono_73
+    21300148: crono_74
+    21300150: crono_75
+    21300152: crono_76
+    21300154: crono_77
+    21300156: crono_78
+    21300158: crono_79
+    21300160: crono_80
+    21300162: crono_81
+    21300164: crono_82
+    21300166: crono_83
+    21300168: crono_84
+    21300170: crono_85
+    21300172: crono_86
+    21300174: crono_87
+    21300176: crono_88
+    21300178: crono_89
+    21300180: crono_90
+    21300182: crono_91
+    21300184: crono_92
+    21300186: crono_93
+    21300188: crono_94
+    21300190: crono_95
+    21300192: crono_96
+    21300194: crono_97
+    21300196: crono_98
+    21300198: crono_99
+    21300200: crono_100
+    21300202: crono_101
+    21300204: crono_102
+    21300206: crono_103
+    21300208: crono_104
+    21300210: crono_105
+    21300212: crono_106
+    21300214: crono_107
+    21300216: crono_108
+    21300218: crono_109
+    21300220: crono_110
+    21300222: crono_111
+    21300224: crono_112
+    21300226: crono_113
+    21300228: crono_114
+    21300230: crono_115
+    21300232: crono_116
+    21300234: crono_117
+    21300236: crono_118
+    21300238: crono_119
+    21300240: crono_120
+    21300242: crono_121
+    21300244: crono_122
+    21300246: crono_123
+    21300248: crono_124
+    21300250: crono_125
+    21300252: crono_126
+    21300254: crono_127
+    21300256: crono_128
+    21300258: crono_129
+    21300260: crono_130
+    21300262: crono_131
+    21300264: crono_132
+    21300266: crono_133
+    21300268: crono_134
+    21300270: crono_135
+    21300272: crono_136
+    21300274: crono_137
+    21300276: crono_138
+    21300278: crono_139
+    21300280: crono_140
+    21300282: crono_141
+    21300284: crono_142
+    21300286: crono_143
+    21300288: crono_144
+    21300290: crono_145
+    21300292: crono_146
+    21300294: crono_147
+    21300296: crono_148
+    21300298: crono_149
+    21300300: crono_150
+    21300302: crono_151
+    21300304: crono_152
+    21300306: crono_153
+    21300308: crono_154
+    21300310: crono_155
+    21300312: crono_156
+    21300314: crono_157
+    21300316: crono_158
+    21300318: crono_159
+    21300320: crono_160
+    21300322: crono_161
+    21300324: crono_162
+    21300326: crono_163
+    21300328: crono_164
+    21300330: crono_165
+    21300332: crono_166
+    21300334: crono_167
+    21300336: crono_168
+    21300338: crono_169
+    21300340: crono_170
+    21300342: crono_171
+    21300344: crono_172
+    21300346: crono_173
+    21300348: crono_174
+    21300350: crono_175
+    21300352: crono_176
+    21300354: crono_177
+    21300356: crono_178
+    21300358: crono_179
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: 2
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: crono_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 978
+        width: 16
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_1
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 978
+        width: 16
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_2
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 978
+        width: 16
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_3
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 978
+        width: 18
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_4
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 978
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_5
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 978
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_6
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 978
+        width: 18
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_7
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 978
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_8
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 978
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_9
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 981
+        width: 15
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_10
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 981
+        width: 22
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_11
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 981
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_12
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 981
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_13
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 981
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_14
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 981
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_15
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 981
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_16
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 981
+        width: 18
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_17
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 981
+        width: 16
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_18
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 981
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_19
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 981
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_20
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 981
+        width: 16
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_21
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 941
+        width: 79
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_22
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 941
+        width: 85
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_23
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 934
+        width: 76
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_24
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 826
+        width: 68
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_25
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 925
+        width: 16
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_26
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 917
+        width: 19
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_27
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 917
+        width: 19
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_28
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 925
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_29
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 924
+        width: 35
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_30
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 924
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_31
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 925
+        width: 16
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_32
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 924
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_33
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 925
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_34
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 925
+        width: 24
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_35
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 925
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_36
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 925
+        width: 20
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_37
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 925
+        width: 18
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_38
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 925
+        width: 18
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_39
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 925
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_40
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 925
+        width: 20
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_41
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 925
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_42
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 925
+        width: 15
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_43
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 925
+        width: 15
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_44
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 856
+        width: 78
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_45
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 857
+        width: 75
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_46
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 867
+        width: 15
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_47
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 867
+        width: 16
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_48
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 862
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_49
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 862
+        width: 24
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_50
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 867
+        width: 16
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_51
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 857
+        width: 17
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_52
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 861
+        width: 14
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_53
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 869
+        width: 16
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_54
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 869
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_55
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 869
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_56
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 869
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_57
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 869
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_58
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 867
+        width: 20
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_59
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 861
+        width: 19
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_60
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 868
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_61
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 868
+        width: 22
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_62
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 868
+        width: 22
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_63
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 867
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_64
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 867
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_65
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 890
+        width: 34
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_66
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 877
+        width: 50
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_67
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 809
+        width: 14
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_68
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 809
+        width: 14
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_69
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 809
+        width: 14
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_70
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 808
+        width: 15
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_71
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 808
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_72
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 808
+        width: 15
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_73
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 808
+        width: 14
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_74
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 808
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_75
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 808
+        width: 14
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_76
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 807
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_77
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 807
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_78
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 807
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_79
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 807
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_80
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 805
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_81
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 805
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_82
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 804
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_83
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 804
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_84
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 825
+        width: 30
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_85
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 804
+        width: 32
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_86
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 748
+        width: 16
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_87
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 747
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_88
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 747
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_89
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 746
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_90
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 747
+        width: 22
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_91
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 747
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_92
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 750
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_93
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 750
+        width: 21
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_94
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 750
+        width: 21
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_95
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 750
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_96
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 752
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_97
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 751
+        width: 14
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_98
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 751
+        width: 14
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_99
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 751
+        width: 14
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_100
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 751
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_101
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 696
+        width: 14
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_102
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 696
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_103
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 696
+        width: 21
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_104
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 696
+        width: 21
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_105
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 700
+        width: 39
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_106
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 692
+        width: 24
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_107
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 701
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_108
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 690
+        width: 21
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_109
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 708
+        width: 56
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_110
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 701
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_111
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 701
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_112
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 699
+        width: 14
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_113
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 699
+        width: 14
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_114
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 701
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_115
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 700
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_116
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 700
+        width: 19
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_117
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 699
+        width: 15
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_118
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 699
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_119
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 644
+        width: 16
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_120
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 644
+        width: 18
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_121
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 644
+        width: 16
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_122
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 644
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_123
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 644
+        width: 18
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_124
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 644
+        width: 16
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_125
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 644
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_126
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 645
+        width: 15
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_127
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 645
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_128
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 645
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_129
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 641
+        width: 17
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_130
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 641
+        width: 17
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_131
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 638
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_132
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 638
+        width: 16
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_133
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 638
+        width: 16
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_134
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 638
+        width: 16
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_135
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 638
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_136
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 583
+        width: 17
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_137
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 583
+        width: 16
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_138
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 583
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_139
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 583
+        width: 20
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_140
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 583
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_141
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 583
+        width: 32
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_142
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 584
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_143
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 584
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_144
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 584
+        width: 16
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_145
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 584
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_146
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 584
+        width: 16
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_147
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 583
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_148
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 583
+        width: 26
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_149
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 583
+        width: 20
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_150
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 583
+        width: 18
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_151
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 583
+        width: 18
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_152
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 583
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_153
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 582
+        width: 21
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_154
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 524
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_155
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 523
+        width: 26
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_156
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 523
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_157
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 522
+        width: 16
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_158
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 522
+        width: 15
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_159
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 518
+        width: 16
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_160
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 522
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_161
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 522
+        width: 17
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_162
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 520
+        width: 21
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_163
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 522
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_164
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 521
+        width: 15
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_165
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 521
+        width: 15
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_166
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 474
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_167
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 474
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_168
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 474
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_169
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 474
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_170
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 467
+        width: 16
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_171
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 473
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_172
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 473
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_173
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 473
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_174
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 474
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_175
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 493
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_176
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 475
+        width: 15
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_177
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 493
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_178
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 474
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crono_179
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 473
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
