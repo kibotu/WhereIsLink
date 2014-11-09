@@ -3,25 +3,30 @@ using System.Collections;
 
 public class HealthController : MonoBehaviour {
 
-	public int health = 3;
+	public float Health;
+	public float MaxHealth;
+	public float HealthRegen;
+	public float HealthRegenInterval;
+	public float startTime;
 
-	// Use this for initialization
 	void Start () {
-	
+		
 	}
 	
-	// Update is called once per frame
 	void Update () {
-		if (health == 0) {
-			death();
+		if (Health <= 0) {
+			Die();
 		}
-	
+
+		startTime += Time.deltaTime;
+		if (startTime >= HealthRegenInterval) 
+		{
+			startTime = 0;
+			Health = Mathf.Clamp(Health + HealthRegen, 0, MaxHealth);
+		}
 	}
-	void OnTriggerEnter2D(Collider2D other){
-		if (other.tag == "enemy")
-				health--;
-	}
-	void death(){
+
+	void Die(){
 		Destroy (this);
 	}
 }
