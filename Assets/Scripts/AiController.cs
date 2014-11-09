@@ -64,20 +64,29 @@ public class AiController : MonoBehaviour {
 
 	void MoveTowardsPlayer ()
 	{
-		if (transform.position.x < player.transform.position.x)
-			animCtrl.playWalkRight ();
-		
-		else if (transform.position.x > player.transform.position.x)
-			animCtrl.playWalkLeft ();
-		
-		else if (transform.position.y < player.transform.position.y)
-			animCtrl.playWalkDown ();
-		
-		else if (transform.position.y > player.transform.position.y)
-			animCtrl.playWalkUp ();
+	    float x = (transform.position.x - player.transform.position.x);
+	    float y = (transform.position.y - player.transform.position.y);
+        
+        // x<0, wenn player rechts von AI
+        // y<0, wenn player über AI
 
-		else 
-			animCtrl.playIdle();
+	    if (Mathf.Abs(x) < Mathf.Abs(y))
+	    {
+	        if (y < 0)
+	        {
+	            animCtrl.playWalkUp();
+	        }
+	        else animCtrl.playWalkDown();
+	    }
+	    else if (x < 0)
+	    {
+	        animCtrl.playWalkRight();
+	    }
+        else if (x >= 0) 
+        {
+            animCtrl.playWalkLeft();
+	    }
+		else animCtrl.playIdle();
 
 		transform.position = Vector3.MoveTowards (transform.position, player.transform.position, MovementSpeed*Time.deltaTime);
 	}
