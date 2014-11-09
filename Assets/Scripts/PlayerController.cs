@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour {
 						animationController.playIdle();
 		}
 
-		if (Input.GetMouseButtonDown (0))
+		if (Input.GetMouseButtonDown (0) || Input.GetKeyDown(KeyCode.Space))
 			Attack ();
 		if(Input.GetMouseButtonDown(1))
 			Debug.Log("Pressed right click.");

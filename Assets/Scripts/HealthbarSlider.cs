@@ -10,8 +10,8 @@ public class HealthbarSlider : MonoBehaviour {
 	public Image Fill;
 	public Image Container;
 
-	public void Update() {
-
+	public void SetHealthBar(float percentage) 
+	{
 		Fill.rectTransform.sizeDelta = new Vector2( HealthPercentage * 826, Fill.rectTransform.sizeDelta.y); 
 	}
 }
