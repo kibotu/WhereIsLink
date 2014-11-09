@@ -9,6 +9,7 @@ public class HealthController : MonoBehaviour {
 	public float HealthRegenInterval;
 	public float startTime;
 	public GameObject DeathAnim;
+	public HealthbarSlider healthbar;
 	
 	void Update () {
 		if (Health <= 0) {
@@ -25,6 +26,7 @@ public class HealthController : MonoBehaviour {
 
 	void Die(){
 
+	
 		if (gameObject.tag.Equals ("Player")) {
 			StartCoroutine ("RotateCamera");
 		} else {
@@ -32,6 +34,10 @@ public class HealthController : MonoBehaviour {
 		}
 		(Instantiate (DeathAnim) as GameObject).transform.position = transform.position;
 		Destroy (gameObject);
+
+		if(healthbar != null) 
+			healthbar.SetHealthBar (0);
+
 	}
 
 	private IEnumerator RotateCamera() {

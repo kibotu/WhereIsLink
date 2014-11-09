@@ -4,6 +4,7 @@ using System.Collections;
 public class AiController : MonoBehaviour {
 
 	public AttackController attackCtrl;
+	public AnimationController animCtrl;
 	public PlayerController player;
 	public float AggroRange;
 	public HealthController life;
@@ -63,6 +64,21 @@ public class AiController : MonoBehaviour {
 
 	void MoveTowardsPlayer ()
 	{
+		if (transform.position.x < player.transform.position.x)
+			animCtrl.playWalkRight ();
+		
+		else if (transform.position.x > player.transform.position.x)
+			animCtrl.playWalkLeft ();
+		
+		else if (transform.position.y < player.transform.position.y)
+			animCtrl.playWalkDown ();
+		
+		else if (transform.position.y > player.transform.position.y)
+			animCtrl.playWalkUp ();
+
+		else 
+			animCtrl.playIdle();
+
 		transform.position = Vector3.MoveTowards (transform.position, player.transform.position, MovementSpeed*Time.deltaTime);
 	}
 }

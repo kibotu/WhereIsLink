@@ -3,9 +3,8 @@ using System.Collections;
 
 public class AnimationController : MonoBehaviour {
 
-
 	public Animator animator;
-	// Use this for initialization
+
 	void Awake () {
 		animator = GetComponent<Animator> ();
 	}
