@@ -32,7 +32,6 @@ public class AttackController : MonoBehaviour {
 	    if (dir.Equals(Vector3.up))
 			transform.rotation = Quaternion.Euler(new Vector3(0,0,0));	
 	}
-	
 
 	
 	private IEnumerator DelayedCallback(float time, Action callback)
