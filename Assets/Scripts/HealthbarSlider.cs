@@ -12,6 +12,7 @@ public class HealthbarSlider : MonoBehaviour {
 
 	public void SetHealthBar(float percentage) 
 	{
+		HealthPercentage = percentage;
 		Fill.rectTransform.sizeDelta = new Vector2( HealthPercentage * 826, Fill.rectTransform.sizeDelta.y); 
 	}
 }

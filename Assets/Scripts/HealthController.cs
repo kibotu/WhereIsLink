@@ -8,10 +8,7 @@ public class HealthController : MonoBehaviour {
 	public float HealthRegen;
 	public float HealthRegenInterval;
 	public float startTime;
-
-	void Start () {
-		
-	}
+	public GameObject DeathAnim;
 	
 	void Update () {
 		if (Health <= 0) {
@@ -27,6 +24,7 @@ public class HealthController : MonoBehaviour {
 	}
 
 	void Die(){
-		Destroy (this);
+		(Instantiate (DeathAnim) as GameObject).transform.position = transform.position;
+		Destroy (gameObject);
 	}
 }

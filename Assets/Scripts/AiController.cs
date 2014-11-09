@@ -3,13 +3,45 @@ using System.Collections;
 
 public class AiController : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-	
+	public AttackController attackCtrl;
+	public PlayerController player;
+	public float AggroRange;
+	public HealthController life;
+	public float MovementSpeed;
+
+	public bool IsInCombat;
+
+	public void Defend (AttackController attackCtrl)
+	{
+		life.Health -= attackCtrl.Damage;
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+
+	public void Update() {
+
+		float distance = Vector3.Distance (player.transform.position, transform.position);
+
+		if (distance <= AggroRange) {
+			Debug.Log (gameObject.name + ": Target in sight!");
+			IsInCombat = true;
+		}
+
+		if (IsInCombat) {
+			if(distance <= attackCtrl.AttackRange)
+				AttackPlayer();
+			else
+				MoveTowardsPlayer();
+		}
+	}
+
+	void AttackPlayer ()
+	{
+		Debug.Log ("Attack player");
+	}
+
+	void MoveTowardsPlayer ()
+	{
+		Debug.Log ("MoveTowardsPlayer");
+		//transform.Translate ();
+		transform.position = Vector3.MoveTowards (transform.position, player.transform.position, MovementSpeed*Time.deltaTime);
 	}
 }
