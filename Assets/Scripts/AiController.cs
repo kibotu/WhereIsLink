@@ -16,7 +16,16 @@ public class AiController : MonoBehaviour {
 		life.Health -= attackCtrl.Damage;
 	}
 
+	public void AttackPlayer (PlayerController player)
+	{
+		// enemy attacks player
+		player.Defend (attackCtrl);
+	}
+
 	public void Update() {
+
+		if (player == null)
+			return;
 
 		float distance = Vector3.Distance (player.transform.position, transform.position);
 
@@ -36,12 +45,24 @@ public class AiController : MonoBehaviour {
 	void AttackPlayer ()
 	{
 		Debug.Log ("Attack player");
+
+		if (transform.position.x > player.transform.position.x)
+			attackCtrl.Direction(Vector3.right);
+
+		if (transform.position.x < player.transform.position.x)
+			attackCtrl.Direction(Vector3.left);
+
+		if (transform.position.y > player.transform.position.y)
+			attackCtrl.Direction(Vector3.down);
+
+		if (transform.position.y < player.transform.position.y)
+			attackCtrl.Direction(Vector3.up);
+		
+		attackCtrl.Attack ();
 	}
 
 	void MoveTowardsPlayer ()
 	{
-		Debug.Log ("MoveTowardsPlayer");
-		//transform.Translate ();
 		transform.position = Vector3.MoveTowards (transform.position, player.transform.position, MovementSpeed*Time.deltaTime);
 	}
 }

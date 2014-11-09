@@ -36,6 +36,9 @@ public class CameraController : MonoBehaviour
 
         if (useSmoothing)
         {
+			if(target == null) 
+				return;
+
             newPos.x = Mathf.SmoothDamp(thisTransform.position.x, target.position.x, ref moveDirection.x, SMOOTH_TIME);
             newPos.y = Mathf.SmoothDamp(thisTransform.position.y, target.position.y, ref moveDirection.y, SMOOTH_TIME);
             newPos.z = Mathf.SmoothDamp(thisTransform.position.z, target.position.z, ref moveDirection.z, SMOOTH_TIME);
@@ -65,6 +68,5 @@ public class CameraController : MonoBehaviour
         #endregion
 
         transform.position = Vector3.Slerp(transform.position,newPos, Time.time);
-        
     }
 }

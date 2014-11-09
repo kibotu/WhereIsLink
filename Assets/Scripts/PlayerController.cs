@@ -115,8 +115,9 @@ public class PlayerController : MonoBehaviour {
 		EnterCombat ();
 	}
 
-	public void Defend(AiController enemy) {
+	public void Defend(AttackController enemy) {
 		EnterCombat ();
+		life.Health -= attackCtrl.Damage;
 	}
 }
 

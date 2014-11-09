@@ -11,9 +11,16 @@ public class AttackController : MonoBehaviour {
 	public Animator animator;
 	public SpriteRenderer SwordSprite;
 	public PolygonCollider2D SwordCollider;
+	private bool IsAttacking;
+
+	private float _starTime;
 
 	public void Attack() 
 	{
+		if (_starTime >= 0) 
+			return;
+
+		_starTime = AttackSpeed;
 		animator.StopPlayback();
 		animator.Play ("SwordAttack");
 	}
@@ -32,6 +39,9 @@ public class AttackController : MonoBehaviour {
 	}
 
 	public void Update() {
+
+		_starTime -= Time.deltaTime;
+
 		if (animator.GetCurrentAnimatorStateInfo(0).IsName("SwordAttack")) {
 			SwordSprite.enabled = true;
 			SwordCollider.enabled = true;

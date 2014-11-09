@@ -24,7 +24,20 @@ public class HealthController : MonoBehaviour {
 	}
 
 	void Die(){
+
+		if (gameObject.tag.Equals ("Player")) {
+			StartCoroutine ("RotateCamera");
+		} else {
+			(Instantiate (DeathAnim) as GameObject).transform.position = transform.position;
+		}
 		(Instantiate (DeathAnim) as GameObject).transform.position = transform.position;
 		Destroy (gameObject);
+	}
+
+	private IEnumerator RotateCamera() {
+		yield return new WaitForEndOfFrame();
+		//Camera.main.transform.Rotate ();
+
+		//(Instantiate (DeathAnim) as GameObject).transform.position = transform.position;
 	}
 }
