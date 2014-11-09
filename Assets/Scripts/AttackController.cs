@@ -8,14 +8,11 @@ public class AttackController : MonoBehaviour {
 	public float AttackSpeed;
 	public Vector3 direction;
 	public Animator animator;
-
-	public void Start() 
-	{
-	}
+	public SpriteRenderer SwordSprite;
+	public PolygonCollider2D SwordCollider;
 
 	public void Attack() 
 	{
-
 		animator.StopPlayback();
 		animator.Play ("SwordAttack");
 	}
@@ -30,13 +27,24 @@ public class AttackController : MonoBehaviour {
 	    if (dir.Equals(Vector3.down))
 			transform.rotation = Quaternion.Euler(new Vector3(0,0,-180));	
 	    if (dir.Equals(Vector3.up))
-			transform.rotation = Quaternion.Euler(new Vector3(0,0,0));	
+			transform.rotation = Quaternion.Euler(new Vector3(0,0,0));
 	}
 
-	
-	private IEnumerator DelayedCallback(float time, Action callback)
+	public void Update() {
+		if (animator.GetCurrentAnimatorStateInfo(0).IsName("SwordAttack")) {
+			SwordSprite.enabled = true;
+			SwordCollider.enabled = true;
+		} else {
+			SwordSprite.enabled = false;
+			SwordCollider.enabled = false;
+		}
+	}
+
+	private IEnumerator WaitForAnimation ( Animation animation )
 	{
-		yield return new WaitForSeconds(time);
-		callback();
+		do
+		{
+			yield return null;
+		} while ( animation.isPlaying );
 	}
 }
