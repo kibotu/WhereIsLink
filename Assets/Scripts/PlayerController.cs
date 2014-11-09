@@ -6,7 +6,6 @@ public class PlayerController : MonoBehaviour {
 	public float Speed;
 	public AttackController attackCtrl;
 	public AnimationController animationController;
-	private bool facingLeft = true;
 
 	void Start(){
 		//animationController = GetComponent<AnimationController> ();
@@ -37,19 +36,13 @@ public class PlayerController : MonoBehaviour {
 
 	void WalkRight ()
 	{
-		
 		animationController.playWalkRight ();
-		if(!facingLeft)
-			Flip();
 		transform.position += Vector3.right * Speed;
 		attackCtrl.Direction(Vector3.right);
 	}
 
 	void WalkLeft ()
 	{	
-		if(facingLeft)
-			Flip();
-		
 		animationController.playWalkLeft ();
 		transform.position += Vector3.left * Speed;
 		attackCtrl.Direction(Vector3.left);
@@ -72,13 +65,7 @@ public class PlayerController : MonoBehaviour {
 	void Attack ()
 	{
 		attackCtrl.Attack ();
-	}
-	void Flip(){
-		facingLeft = !facingLeft;
-		Vector3 theScale = transform.localScale;																
-		theScale.x *= -1;																						
-		transform.localScale = theScale;
-	}									
+	}								
 }
 
 

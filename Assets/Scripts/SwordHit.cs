@@ -24,7 +24,7 @@ public class SwordHit : MonoBehaviour {
 			// enemy hits player
 			if (coll.gameObject.tag.Equals ("Player")) {
 				Debug.Log ("hits " + coll.gameObject.name);
-				var player = coll.gameObject.transform.parent.gameObject.GetComponent<PlayerController>();
+				var player = coll.gameObject.transform.parent.parent.gameObject.GetComponent<PlayerController>();
 				var enemy = gameObject.transform.parent.parent.gameObject.GetComponent<AiController>();
 			}
 		}
