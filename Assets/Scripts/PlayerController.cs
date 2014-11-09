@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour {
 	public float Speed;
 	public AttackController attackCtrl;
 	public AnimationController animationController;
+	private bool facingLeft = true;
 
 	void Start(){
 		//animationController = GetComponent<AnimationController> ();
@@ -15,17 +16,12 @@ public class PlayerController : MonoBehaviour {
 
 		if (Input.GetKey ("down") || Input.GetKey (KeyCode.S)) {
 						WalkDown ();
-						animationController.playWalkDown ();
 		} else if (Input.GetKey ("up") || Input.GetKey (KeyCode.W)) {
-						WalkUp ();
-						animationController.playWalkUp ();
-		} else if (Input.GetKey ("left") || Input.GetKey (KeyCode.A)) {
-
+						WalkUp ();						
+		} else if (Input.GetKey ("left") || Input.GetKey (KeyCode.A)) {						
 						WalkLeft ();
-						animationController.playWalkLeft ();
-		} else if (Input.GetKey ("right") || Input.GetKey (KeyCode.D)) {
+		} else if (Input.GetKey ("right") || Input.GetKey (KeyCode.D)) {						
 						WalkRight ();
-						animationController.playWalkRight ();
 		} else {
 						animationController.playIdle();
 		}
@@ -41,24 +37,34 @@ public class PlayerController : MonoBehaviour {
 
 	void WalkRight ()
 	{
+		
+		animationController.playWalkRight ();
+		if(!facingLeft)
+			Flip();
 		transform.position += Vector3.right * Speed;
 		attackCtrl.Direction(Vector3.right);
 	}
 
 	void WalkLeft ()
 	{	
+		if(facingLeft)
+			Flip();
+		
+		animationController.playWalkLeft ();
 		transform.position += Vector3.left * Speed;
 		attackCtrl.Direction(Vector3.left);
 	}
 
 	void WalkUp ()
 	{
+		animationController.playWalkUp ();
 		transform.position += Vector3.up * Speed;
 		attackCtrl.Direction(Vector3.up);
 	}
 
 	void WalkDown ()
-	{
+	{		
+		animationController.playWalkDown ();
 		transform.position += Vector3.down * Speed;
 		attackCtrl.Direction(Vector3.down);
 	}
@@ -68,6 +74,7 @@ public class PlayerController : MonoBehaviour {
 		attackCtrl.Attack ();
 	}
 	void Flip(){
+		facingLeft = !facingLeft;
 		Vector3 theScale = transform.localScale;																
 		theScale.x *= -1;																						
 		transform.localScale = theScale;
