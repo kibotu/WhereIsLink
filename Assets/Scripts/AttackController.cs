@@ -4,8 +4,9 @@ using System;
 
 public class AttackController : MonoBehaviour {
 	
-	public float AttackRadius;
+	public float AttackRange;
 	public float AttackSpeed;
+	public float Damage;
 	public Vector3 direction;
 	public Animator animator;
 	public SpriteRenderer SwordSprite;
@@ -38,13 +39,5 @@ public class AttackController : MonoBehaviour {
 			SwordSprite.enabled = false;
 			SwordCollider.enabled = false;
 		}
-	}
-
-	private IEnumerator WaitForAnimation ( Animation animation )
-	{
-		do
-		{
-			yield return null;
-		} while ( animation.isPlaying );
 	}
 }

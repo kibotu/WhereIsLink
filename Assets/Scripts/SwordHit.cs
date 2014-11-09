@@ -16,9 +16,10 @@ public class SwordHit : MonoBehaviour {
 			// player hits enemy
 			if (coll.gameObject.tag.Equals ("Enemy")) {
 				Debug.Log ("hits " + coll.gameObject.name);
-				//var enemy = coll.gameObject.transform.parent.gameObject.GetComponent<AiController>();
+				var enemy = coll.transform.gameObject.GetComponent<AiController>();
 				var player = gameObject.transform.parent.parent.gameObject.GetComponent<PlayerController>();
-				//enemy.
+
+				player.AttackEnemy(enemy);
 			}
 			
 			// enemy hits player

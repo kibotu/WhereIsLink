@@ -6,23 +6,61 @@ public class PlayerController : MonoBehaviour {
 	public float Speed;
 	public AttackController attackCtrl;
 	public AnimationController animationController;
+	public HealthController life;
+	public HealthbarSlider healtbar;
+	public AudioSource CombatSound;
+	public AudioSource DefaultBackgroundSound;
 
-	void Start(){
-		//animationController = GetComponent<AnimationController> ();
+	public bool IsInCombat;
+	public float CombatTimeOut;
+	public float _currentTimeInCombat;
+
+	public void Start() {
+		LeaveCombat ();
+	}
+
+	public void EnterCombat() {
+		IsInCombat = true;
+		_currentTimeInCombat = CombatTimeOut;
+
+		// play combat sound
+		if (!CombatSound.isPlaying) {
+			// CombatSound.audio.time = 60+54;
+			CombatSound.Play ();
+			DefaultBackgroundSound.Pause ();
 		}
-	
+	}
+
+	public void LeaveCombat() {
+		IsInCombat = false;
+
+		// play default music
+		if (!DefaultBackgroundSound.isPlaying) {
+			CombatSound.Pause ();
+			DefaultBackgroundSound.Play ();
+		}
+	}
+
 	void Update () {
 
+		if (IsInCombat) {
+			_currentTimeInCombat -= Time.deltaTime;
+			if(_currentTimeInCombat <= 0) 
+				LeaveCombat();
+		}
+
+		updateHealth ();
+
 		if (Input.GetKey ("down") || Input.GetKey (KeyCode.S)) {
-						WalkDown ();
+			WalkDown ();
 		} else if (Input.GetKey ("up") || Input.GetKey (KeyCode.W)) {
-						WalkUp ();						
+			WalkUp ();						
 		} else if (Input.GetKey ("left") || Input.GetKey (KeyCode.A)) {						
-						WalkLeft ();
+			WalkLeft ();
 		} else if (Input.GetKey ("right") || Input.GetKey (KeyCode.D)) {						
-						WalkRight ();
+			WalkRight ();
 		} else {
-						animationController.playIdle();
+			animationController.playIdle();
 		}
 
 		if (Input.GetMouseButtonDown (0) || Input.GetKeyDown(KeyCode.Space))
@@ -31,7 +69,10 @@ public class PlayerController : MonoBehaviour {
 			Debug.Log("Pressed right click.");
 		if(Input.GetMouseButtonDown(2))
 			Debug.Log("Pressed middle click.");
+	}
 
+	public void updateHealth () {
+		healtbar.SetHealthBar (Mathf.Clamp(life.Health / life.MaxHealth,0f, 1f));
 	}
 
 	void WalkRight ()
@@ -66,6 +107,17 @@ public class PlayerController : MonoBehaviour {
 	{
 		attackCtrl.Attack ();
 	}								
+
+	public void AttackEnemy (AiController enemy)
+	{
+		// player attacks enemy
+		enemy.Defend (attackCtrl);
+		EnterCombat ();
+	}
+
+	public void Defend(AiController enemy) {
+		EnterCombat ();
+	}
 }
 
 
