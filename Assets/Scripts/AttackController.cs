@@ -3,7 +3,8 @@ using System.Collections;
 using System;
 
 public class AttackController : MonoBehaviour {
-	
+
+	public AudioSource swosh;
 	public float AttackRange;
 	public float AttackSpeed;
 	public float Damage;
@@ -24,6 +25,8 @@ public class AttackController : MonoBehaviour {
 		_starTime = AttackSpeed;
 		animator.StopPlayback();
 		animator.Play ("SwordAttack");
+		swosh.Stop ();
+		swosh.Play ();
 	}
 
 	public void Direction(Vector3 dir) 

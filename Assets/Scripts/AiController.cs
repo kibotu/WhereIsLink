@@ -12,9 +12,25 @@ public class AiController : MonoBehaviour {
 
 	public bool IsInCombat;
 
+	public Color startColor;
+
+	public void Start() {
+		startColor = transform.GetChild(0).GetComponent<SpriteRenderer> ().color;		
+	}
+
 	public void Defend (AttackController attackCtrl)
 	{
 		life.Health -= attackCtrl.Damage;
+		transform.GetChild(0).GetComponent<SpriteRenderer> ().color = Color.red;
+		Debug.Log (gameObject.name + " red");
+		StopCoroutine ("Colorize");
+		StartCoroutine ("Colorize");
+	}
+
+	public IEnumerator Colorize() {
+		yield return new WaitForSeconds (0.3f);
+		Debug.Log (gameObject.name + " reset color");
+		transform.GetChild(0).GetComponent<SpriteRenderer> ().color = startColor;
 	}
 
 	public void AttackPlayer (PlayerController player)

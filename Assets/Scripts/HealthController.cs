@@ -25,10 +25,11 @@ public class HealthController : MonoBehaviour {
 	}
 
 	void Die(){
-
-	
-		if (gameObject.tag.Equals ("Player")) {
-			StartCoroutine ("RotateCamera");
+		
+		if (gameObject.tag.Equals ("AI Link")) {
+			Application.LoadLevel ("endScreen");
+		}else if (gameObject.tag.Equals ("Player")) {
+			Application.LoadLevel("loseScreen");
 		} else {
 			(Instantiate (DeathAnim) as GameObject).transform.position = transform.position;
 		}
