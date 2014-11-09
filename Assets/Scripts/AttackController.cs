@@ -10,6 +10,7 @@ public class AttackController : MonoBehaviour {
 	public Vector3 direction;
 	public Animator animator;
 	public SpriteRenderer SwordSprite;
+	public TrailRenderer trailrenderer;
 	public PolygonCollider2D SwordCollider;
 	private bool IsAttacking;
 
@@ -45,9 +46,11 @@ public class AttackController : MonoBehaviour {
 		if (animator.GetCurrentAnimatorStateInfo(0).IsName("SwordAttack")) {
 			SwordSprite.enabled = true;
 			SwordCollider.enabled = true;
+			trailrenderer.enabled = true;
 		} else {
 			SwordSprite.enabled = false;
 			SwordCollider.enabled = false;
+			trailrenderer.enabled = false;
 		}
 	}
 }
