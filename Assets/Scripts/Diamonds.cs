@@ -5,6 +5,7 @@ public class Diamonds : MonoBehaviour
 {
     public int worth;    
     public Animator animator;
+	public AudioSource audioSource;
 
     
     void Start()
@@ -32,6 +33,20 @@ public class Diamonds : MonoBehaviour
     {
 
     }
-    
+	void OnCollisionEnter2D(Collision2D coll) 
+	{
+		print(coll.gameObject.tag);
+		if (coll.gameObject.tag == "Player")
+		{
+			audioSource.Play();
+			StartCoroutine(Waits(audioSource.clip.length));
+
+
+		}
+	}
+	public IEnumerator Waits(float time){
+		yield return new WaitForSeconds (time);
+		Destroy(this.gameObject);
+	}
 }
 

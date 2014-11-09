@@ -14,14 +14,5 @@ public class InventoryController : MonoBehaviour {
 	void Update () {
 	
 	}
-    void OnCollisionEnter2D(Collision2D coll) 
-    {
-        print(coll.gameObject.tag);
-        if (coll.gameObject.tag == "Diamond")
-        {
-            coins += coll.gameObject.GetComponent<Diamonds>().worth;
-            print(coins);
-            Destroy(coll.gameObject);
-        }
-    }
+    
 }
