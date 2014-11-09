@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour {
 	public AttackController attackCtrl;
 	public AnimationController animationController;
 
-	void Awake(){
+	void Start(){
 		//animationController = GetComponent<AnimationController> ();
 		}
 	
@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour {
 						WalkUp ();
 						animationController.playWalkUp ();
 		} else if (Input.GetKey ("left") || Input.GetKey (KeyCode.A)) {
+
 						WalkLeft ();
 						animationController.playWalkLeft ();
 		} else if (Input.GetKey ("right") || Input.GetKey (KeyCode.D)) {
@@ -66,4 +67,12 @@ public class PlayerController : MonoBehaviour {
 	{
 		attackCtrl.Attack ();
 	}
+	void Flip(){
+		Vector3 theScale = transform.localScale;																
+		theScale.x *= -1;																						
+		transform.localScale = theScale;
+	}									
 }
+
+
+

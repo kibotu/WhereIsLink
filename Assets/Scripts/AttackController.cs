@@ -6,7 +6,7 @@ public class AttackController : MonoBehaviour {
 	
 	public float AttackRadius;
 	public float AttackSpeed;
-	private Vector3 direction;
+	public Vector3 direction;
 	public Animator animator;
 
 	public void Start() 
