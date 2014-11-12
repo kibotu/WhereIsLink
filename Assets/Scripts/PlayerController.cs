@@ -51,56 +51,148 @@ public class PlayerController : MonoBehaviour {
 
 		updateHealth ();
 
-		if (Input.GetKey ("down") || Input.GetKey (KeyCode.S)) {
-			WalkDown ();
-		} else if (Input.GetKey ("up") || Input.GetKey (KeyCode.W)) {
-			WalkUp ();						
-		} else if (Input.GetKey ("left") || Input.GetKey (KeyCode.A)) {						
-			WalkLeft ();
-		} else if (Input.GetKey ("right") || Input.GetKey (KeyCode.D)) {						
-			WalkRight ();
-		} else {
+		if (Input.GetMouseButtonDown (0) || Input.GetKeyDown(KeyCode.Space))
+			Attack ();
+
+		if(Input.GetMouseButtonDown(1))
+			Debug.Log("Pressed right click.");
+
+		if(Input.GetMouseButtonDown(2))
+			Debug.Log("Pressed middle click.");
+
+		#region catch inputs
+
+		// NORTH_EAST
+		if (pressedNorth() && pressedEast()) {
+			WalkNorthEast();
+		} 
+		
+		// NORTH_WEST
+		else if (pressedNorth() && pressedWest()) {
+			WalkNorthWest();
+		}
+		
+		// SOUTH_EAST
+		else if (pressedSouth() && pressedEast()) {
+			WalkSouthEast();
+		}
+		
+		// SOUTH_WEST
+		else if (pressedSouth() && pressedWest()) {
+			WalkSouthWest();
+		}
+
+		// NORTH
+		else if(pressedNorth()) {
+			WalkNorth();
+		}
+
+		// EAST
+		else if (pressedEast()) {
+			WalkEast();
+		}
+
+		// WEST
+		else if (pressedWest()) {
+			WalkWest();
+		}
+
+		// SOUTH
+		else if (pressedSouth()) {
+			WalkSouth();
+		}
+		
+		// MIDDLE 
+		else {
 			animationController.playIdle();
 		}
 
-		if (Input.GetMouseButtonDown (0) || Input.GetKeyDown(KeyCode.Space))
-			Attack ();
-		if(Input.GetMouseButtonDown(1))
-			Debug.Log("Pressed right click.");
-		if(Input.GetMouseButtonDown(2))
-			Debug.Log("Pressed middle click.");
+		#endregion
+
 	}
 
-	public void updateHealth () {
-		healtbar.SetHealthBar (Mathf.Clamp(life.Health / life.MaxHealth,0f, 1f));
+	#region player inputs
+
+	public bool pressedNorth() {
+		return Input.GetKey ("up") || Input.GetKey (KeyCode.W);
 	}
 
-	void WalkRight ()
+	public bool pressedEast() {
+		return Input.GetKey ("left") || Input.GetKey (KeyCode.A);
+	}
+
+	public bool pressedSouth() {
+		return Input.GetKey ("down") || Input.GetKey (KeyCode.S);
+	}
+
+	public bool pressedWest() {
+		return Input.GetKey ("right") || Input.GetKey (KeyCode.D);
+	}
+
+	#endregion
+
+	#region handle inputs
+
+	void WalkNorthEast ()
 	{
-		animationController.playWalkRight ();
-		transform.position += Vector3.right * Speed;
-		attackCtrl.Direction(Vector3.right);
+		animationController.playWalkUp ();
+		transform.position += (Vector3.up + Vector3.left) * Speed;
+		attackCtrl.Direction(Direction.NORTH_EAST);
 	}
 
-	void WalkLeft ()
-	{	
-		animationController.playWalkLeft ();
-		transform.position += Vector3.left * Speed;
-		attackCtrl.Direction(Vector3.left);
-	}
-
-	void WalkUp ()
+	void WalkNorth ()
 	{
 		animationController.playWalkUp ();
 		transform.position += Vector3.up * Speed;
-		attackCtrl.Direction(Vector3.up);
+		attackCtrl.Direction(Direction.NORTH);
 	}
 
-	void WalkDown ()
-	{		
+	void WalkNorthWest ()
+	{
+		animationController.playWalkUp ();
+		transform.position += (Vector3.up + Vector3.right) * Speed;
+		attackCtrl.Direction(Direction.NORTH_WEST);
+	}
+
+	void WalkEast ()
+	{
+		animationController.playWalkLeft ();
+		transform.position += Vector3.left * Speed;
+		attackCtrl.Direction(Direction.EAST);
+	}
+
+	void WalkWest ()
+	{
+		animationController.playWalkRight ();
+		transform.position += Vector3.right * Speed;
+		attackCtrl.Direction(Direction.WEST);
+	}
+
+	void WalkSouthEast ()
+	{
+		animationController.playWalkDown ();
+		transform.position += (Vector3.down + Vector3.left) * Speed;
+		attackCtrl.Direction(Direction.SOUTH_EAST);
+	}
+
+	void WalkSouth ()
+	{
 		animationController.playWalkDown ();
 		transform.position += Vector3.down * Speed;
-		attackCtrl.Direction(Vector3.down);
+		attackCtrl.Direction(Direction.SOUTH);
+	}
+
+	void WalkSouthWest ()
+	{
+		animationController.playWalkDown ();
+		transform.position += (Vector3.down + Vector3.right) * Speed;
+		attackCtrl.Direction(Direction.SOUTH_WEST);
+	}
+
+	#endregion
+
+	public void updateHealth () {
+		healtbar.SetHealthBar (Mathf.Clamp(life.Health / life.MaxHealth,0f, 1f));
 	}
 
 	void Attack ()

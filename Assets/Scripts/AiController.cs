@@ -64,16 +64,16 @@ public class AiController : MonoBehaviour {
 		Debug.Log ("Attack player");
 
 		if (transform.position.x > player.transform.position.x)
-			attackCtrl.Direction(Vector3.right);
+			attackCtrl.Direction(Direction.EAST);
 
 		if (transform.position.x < player.transform.position.x)
-			attackCtrl.Direction(Vector3.left);
+			attackCtrl.Direction(Direction.WEST);
 
 		if (transform.position.y > player.transform.position.y)
-			attackCtrl.Direction(Vector3.down);
+			attackCtrl.Direction(Direction.SOUTH);
 
 		if (transform.position.y < player.transform.position.y)
-			attackCtrl.Direction(Vector3.up);
+			attackCtrl.Direction(Direction.NORTH);
 		
 		attackCtrl.Attack ();
 	}

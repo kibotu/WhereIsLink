@@ -3,16 +3,7 @@ using System.Collections;
 
 public class SceneController : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
-    public void SelectScene(int Id)
+    public void LoadScene(string Id)
     {
         Application.LoadLevel(Id);
     }

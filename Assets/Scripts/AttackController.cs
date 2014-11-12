@@ -29,18 +29,35 @@ public class AttackController : MonoBehaviour {
 		swosh.Play ();
 	}
 
-	public void Direction(Vector3 dir) 
-	{
-		direction = dir;
-		if (dir.Equals(Vector3.left))
-			transform.rotation = Quaternion.Euler(new Vector3(0,0,90));	
-		if (dir.Equals(Vector3.right))
-			transform.rotation = Quaternion.Euler(new Vector3(0,0,-90));
-	    if (dir.Equals(Vector3.down))
-			transform.rotation = Quaternion.Euler(new Vector3(0,0,-180));	
-	    if (dir.Equals(Vector3.up))
-			transform.rotation = Quaternion.Euler(new Vector3(0,0,0));
+	public void Direction(Direction dir) {
+
+		Quaternion rot = transform.rotation;
+
+		/**
+		 * 			  (N)
+		 *	    (NW)   0°   (NE)
+		 * 		  315° |   45°
+		 * 		     \ |  /
+		 * 	(W) 270°-------------90° (E)
+		 * 			 / |  \
+		 *		  225° |   135°
+		 * 	    (SW)  180°   (SE)
+		 * 			  (S)
+		 */		
+		switch(dir) {
+			case global::Direction.NORTH: rot = Quaternion.Euler(new Vector3(0,0,0)); break;
+			case global::Direction.NORTH_EAST: rot = Quaternion.Euler(new Vector3(0,0,45)); break; 
+			case global::Direction.EAST: rot = Quaternion.Euler(new Vector3(0,0,90)); break; 
+			case global::Direction.SOUTH_EAST: rot = Quaternion.Euler(new Vector3(0,0,135)); break;
+			case global::Direction.SOUTH: rot = Quaternion.Euler(new Vector3(0,0,180)); break;
+			case global::Direction.SOUTH_WEST: rot = Quaternion.Euler(new Vector3(0,0,225)); break;
+			case global::Direction.WEST: rot = Quaternion.Euler(new Vector3(0,0,270)); break; 
+			case global::Direction.NORTH_WEST: rot = Quaternion.Euler(new Vector3(0,0,315)); break;
+		}
+
+		transform.rotation = rot;
 	}
+
 
 	public void Update() {
 
