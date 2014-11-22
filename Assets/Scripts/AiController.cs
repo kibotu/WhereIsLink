@@ -14,8 +14,11 @@ public class AiController : MonoBehaviour {
 
 	public Color startColor;
 
+	private IAiState state = new AiStateWaiting();
+
 	public void Start() {
-		startColor = transform.GetChild(0).GetComponent<SpriteRenderer> ().color;		
+		startColor = transform.GetChild(0).GetComponent<SpriteRenderer> ().color;
+		state.Init(this);
 	}
 
 	public void Defend (AttackController attackCtrl)
@@ -43,6 +46,8 @@ public class AiController : MonoBehaviour {
 
 		if (player == null)
 			return;
+
+		state.Update();
 
 		float distance = Vector3.Distance (player.transform.position, transform.position);
 
