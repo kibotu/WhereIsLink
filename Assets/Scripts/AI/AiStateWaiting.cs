@@ -8,14 +8,61 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 using System;
+using Assets.Promises;
+using UnityEngine;
+
 public class AiStateWaiting : IAiState
 {
+    private AiController aiController;
+    private Vector3 newTarget = Vector3.zero;
+    private float stopTime = 0.0f;
+    private float lastDistance = 0.0f;
 	public void Init(AiController aiController)
 	{
+	    this.aiController = aiController;
 	}
 	
 	public void Update()
 	{
+        // 1. Random wandering.
+	    if (newTarget == Vector3.zero)
+	    {
+	        newTarget = NextDestination();
+	    }
+
+	    float distance = (newTarget - aiController.transform.position).magnitude;
+	    if (distance <= 0.5f)
+	    {
+	        stopTime += Time.deltaTime;
+	        if (stopTime > UnityEngine.Random.Range(2f, 5.0f))
+            {
+                newTarget = NextDestination();
+                stopTime = 0.0f;
+            }
+	    }
+	    else
+	    {
+	        if (Mathf.Abs(lastDistance - distance) < Time.deltaTime*aiController.MovementSpeed/2.0f)
+	        {
+                newTarget = NextDestination();
+	        }
+            aiController.MoveTowards(newTarget);
+	    }
+	    lastDistance = distance;
+
+        // 2. Aggro check.
+	    if (aiController.InAggroRadius())
+	    {
+	        aiController.State = new AiStateAttacking();
+	    }
 	}
+
+    private Vector3 NextDestination()
+    {
+        Vector3 newPos = aiController.camp.transform.position;
+        newPos.x += UnityEngine.Random.Range(-aiController.spawnWanderingRadius, aiController.spawnWanderingRadius);
+        newPos.y += UnityEngine.Random.Range(-aiController.spawnWanderingRadius, aiController.spawnWanderingRadius);
+        return newPos;
+    }
 }
 

@@ -27,9 +27,9 @@ public class HealthController : MonoBehaviour {
 	void Die(){
 		
 		if (gameObject.tag.Equals ("AI Link")) {
-			StartCoroutine("endScreen", 3);
+			StartCoroutine(LoadLevelDelayed("endScreen", 2f));
 		}else if (gameObject.tag.Equals ("Player")) {
-			StartCoroutine("loseScreen", 3);
+			StartCoroutine(LoadLevelDelayed("loseScreen", 2f));
 		} else {
 			(Instantiate (DeathAnim) as GameObject).transform.position = transform.position;
 		}
@@ -41,7 +41,8 @@ public class HealthController : MonoBehaviour {
 	}
 
 	public IEnumerator LoadLevelDelayed(string levelname, float delay) {
-		yield return new WaitForSeconds (delay);
+        yield return new WaitForSeconds(delay);
+        Debug.Log(levelname);
 		Application.LoadLevel (levelname);
 	}
 

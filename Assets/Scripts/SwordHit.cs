@@ -19,7 +19,8 @@ public class SwordHit : MonoBehaviour {
 			}
 			
 			// player hits enemy
-			if (coll.gameObject.tag.Equals ("Enemy")) {
+            if (coll.gameObject.tag.Equals("Enemy") || coll.gameObject.tag.Equals("AI Link"))
+            {
 				Debug.Log ("hits " + col.collider.gameObject.name);
 				var enemy = coll.transform.gameObject.GetComponent<AiController>();
 				var player = gameObject.transform.parent.parent.gameObject.GetComponent<PlayerController>();

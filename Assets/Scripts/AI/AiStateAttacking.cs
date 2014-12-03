@@ -10,12 +10,32 @@
 using System;
 public class AiStateAttacking : IAiState
 {
+    private AiController aiController;
 	public void Init(AiController aiController)
 	{
+	    aiController.player.IsInCombat = true;
+	    this.aiController = aiController;
 	}
 	
 	public void Update()
 	{
+        // 1. Aggro range check.
+        if (aiController.InAggroRadius() == false)
+        {
+            aiController.State = new AiStateWaiting();
+        }
+        else
+        {
+            // 2. Attack range check.
+            if (aiController.InAttackRadius())
+            {
+                aiController.AttackPlayer();
+            }
+            else
+            {
+                aiController.MoveTowardsPlayer();
+            }
+        }
 	}
 }
 

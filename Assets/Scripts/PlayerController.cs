@@ -51,7 +51,7 @@ public class PlayerController : MonoBehaviour {
 
 		updateHealth ();
 
-		if (Input.GetMouseButtonDown (0) || Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Joystick1Button1))
 			Attack ();
 
 		if(Input.GetMouseButtonDown(1))
@@ -114,7 +114,7 @@ public class PlayerController : MonoBehaviour {
 	#region player inputs
 
 	public bool pressedNorth() {
-		return Input.GetKey ("up") || Input.GetKey (KeyCode.W);
+        return Input.GetKey("up") || Input.GetKey(KeyCode.W) ;
 	}
 
 	public bool pressedEast() {

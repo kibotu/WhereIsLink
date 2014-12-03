@@ -1,0 +1,3 @@
+[submodule "Assets/Libraries/Promises-CSharp"]
+	path = Assets/Libraries/Promises-CSharp
+	url = ../Promises-CSharp.git

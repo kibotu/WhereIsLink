@@ -8,14 +8,55 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 using System;
+using System.Linq;
+using UnityEngine;
+
 public class AiStatePatrolling : IAiState
 {
+    private AiController aiController;
+    public int CurrentWayPoint;
+
 	public void Init(AiController aiController)
 	{
+	    this.aiController = aiController;   
 	}
 	
 	public void Update()
 	{
-	}
-}
+        // 1) in patrolling combat radius
+        if (aiController.InPatrolAttackRadius() == true)
+        {
+            aiController.State = new AiStateAttacking();
+        }
+         // 2) in patrolling combat radius
+        else if (aiController.InPatrolSightRadius() == true)
+        {
+            aiController.State = new AiStateInforming();
+        }
+        // 3) walk along way path
+        else
+        {
+            if (Vector3.Distance(aiController.transform.position, aiController.Path[CurrentWayPoint]) <= 0.5f)
+                GetNextWayPoint();
 
+            aiController.MoveTowards(aiController.Path[CurrentWayPoint]);
+        }
+	}
+
+    public int direction = 1;
+
+    private void GetNextWayPoint()
+    {
+        CurrentWayPoint += direction;
+        if (CurrentWayPoint >= aiController.Path.Count())
+        {
+            direction = -1;
+            CurrentWayPoint = aiController.Path.Count() - 1;
+        }
+        else if (CurrentWayPoint < 0)
+        {
+            direction = 1;
+            CurrentWayPoint = 1;
+        }
+    }
+}
